@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1732118664
+::res://assets/::1732115209
+icon.svg::CompressedTexture2D::3138867298171377421::1732115053::1732115209::1::::<><>::
+::res://scenes/::1732118379
+bullet.tscn::PackedScene::4721464386062439989::1732118211::0::1::::<><>::res://scripts/bullet.gd<>uid://bkyqxk17dcd3j::::res://assets/icon.svg
+enemy.tscn::PackedScene::7084315113646151991::1732118211::0::1::::<><>::uid://bkyqxk17dcd3j::::res://assets/icon.svg<>res://scripts/enemy.gd
+game.tscn::PackedScene::6623820000206270781::1732118379::0::1::::<><>::uid://bcwwoysvlps72::::res://scenes/player.tscn<>res://scripts/game.gd<>uid://bkyqxk17dcd3j::::res://assets/icon.svg<>res://scripts/timer.gd
+player.tscn::PackedScene::2573576745850349675::1732118211::0::1::::<><>::res://scripts/player.gd<>uid://bkyqxk17dcd3j::::res://assets/icon.svg
+::res://scripts/::1732118210
+bullet.gd::GDScript::-1::1732117794::0::1::::<>Area2D<>::
+enemy.gd::GDScript::-1::1732118210::0::1::::<>Area2D<>::
+game.gd::GDScript::-1::1732116654::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1732118024::0::1::::<>Area2D<>::
+timer.gd::GDScript::-1::1732115901::0::1::::<>Timer<>::
