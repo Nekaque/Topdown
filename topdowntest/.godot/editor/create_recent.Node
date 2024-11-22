@@ -1,3 +1,5 @@
+Node2D
+Polygon2D
 AnimatedSprite2D
 TileMapLayer
 TileMap
@@ -6,5 +8,4 @@ Sprite2D
 Area2D
 Timer
 VisibleOnScreenNotifier2D
-Node2D
 Camera2D
