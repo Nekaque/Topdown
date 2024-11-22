@@ -11,9 +11,10 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_body_entered(body: Node2D) -> void:
-	print(body.name)
-	if body.name == 'bullet':
+func _on_area_entered(area: Area2D) -> void:
+	if area.is_in_group("Bullet"):
 		var tween = get_tree().create_tween()
-		tween.tween_property($Sprite, "modulate", Color.RED, 0.1)
-		tween.tween_callback($Sprite.queue_free)
+		tween.tween_property($Sprite2D, "modulate", Color.RED, 1)
+		tween.tween_property($Sprite2D, "scale", Vector2(), 1)
+		tween.tween_callback(queue_free)
+		

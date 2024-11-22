@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7t6ec"]
 size = Vector2(8, 27)
 
-[node name="Bullet" type="Area2D"]
+[node name="Bullet" type="Area2D" groups=["Bullet"]]
 script = ExtResource("1_18rdw")
 speed = 1000.0
 
@@ -17,7 +17,8 @@ scale = Vector2(0.0800005, 0.240001)
 texture = ExtResource("2_82fwg")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0, -14)
+position = Vector2(-2.38419e-07, -14)
+scale = Vector2(0.4, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -15.5)
