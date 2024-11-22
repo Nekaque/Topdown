@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk4nbicdmhaev"]
+
+[ext_resource type="Texture2D" uid="uid://dnvxpyovwchoq" path="res://assets/full_body.png" id="1_5nivy"]
+
+[node name="Player2" type="Node2D"]
+
+[node name="Polygons" type="Node2D" parent="."]
+
+[node name="rhand" type="Polygon2D" parent="Polygons"]
+position = Vector2(89, 57)
+texture = ExtResource("1_5nivy")
+polygon = PackedVector2Array(115.845, 10.8933, 115.845, 51.6183, 115.845, 75.7516, 122.548, 75.5841, 122.381, 50.6128, 122.381, 10.8933)
+uv = PackedVector2Array(115.845, 10.8933, 115.845, 51.6183, 115.845, 75.7516, 122.548, 75.5841, 122.381, 50.6128, 122.381, 10.8933)
+
+[node name="head" type="Polygon2D" parent="Polygons"]
+position = Vector2(196, -2)
+texture = ExtResource("1_5nivy")
+polygon = PackedVector2Array(42.5234, 14.9155, 27.1049, 18.435, 15.8762, 33.6859, 15.541, 47.9313, 23.2502, 61.1711, 37.4956, 68.21, 46.8808, 68.0424, 63.1373, 60.5007, 68.6678, 46.4229, 68.5002, 37.5405, 60.6234, 21.2841)
+uv = PackedVector2Array(42.5234, 14.9155, 27.1049, 18.435, 15.8762, 33.6859, 15.541, 47.9313, 23.2502, 61.1711, 37.4956, 68.21, 46.8808, 68.0424, 63.1373, 60.5007, 68.6678, 46.4229, 68.5002, 37.5405, 60.6234, 21.2841)
+
+[node name="lleg" type="Polygon2D" parent="Polygons"]
+position = Vector2(359.578, 23.065)
+scale = Vector2(-1, 1)
+texture = ExtResource("1_5nivy")
+polygon = PackedVector2Array(117.94, 108.935, 84.4215, 174.128, 88.9465, 176.978, 123.973, 111.114)
+uv = PackedVector2Array(117.94, 108.935, 84.4215, 174.128, 88.9465, 176.978, 123.973, 111.114)
+
+[node name="chest" type="Polygon2D" parent="Polygons"]
+position = Vector2(193, -34)
+texture = ExtResource("1_5nivy")
+polygon = PackedVector2Array(6.49097, 99.7174, 82.9132, 100.053, 44.8697, 175.134)
+uv = PackedVector2Array(6.49097, 99.7174, 82.9132, 100.053, 44.8697, 175.134)
+
+[node name="lhand" type="Polygon2D" parent="Polygons"]
+position = Vector2(148, 57)
+texture = ExtResource("1_5nivy")
+polygon = PackedVector2Array(115.845, 10.8933, 115.845, 51.6183, 115.845, 75.7516, 122.548, 75.5841, 122.381, 50.6128, 122.381, 10.8933)
+uv = PackedVector2Array(115.845, 10.8933, 115.845, 51.6183, 115.845, 75.7516, 122.548, 75.5841, 122.381, 50.6128, 122.381, 10.8933)
+
+[node name="rleg" type="Polygon2D" parent="Polygons"]
+position = Vector2(118.578, 23.065)
+texture = ExtResource("1_5nivy")
+polygon = PackedVector2Array(117.94, 108.935, 84.4215, 174.128, 88.9465, 176.978, 123.973, 111.114)
+uv = PackedVector2Array(117.94, 108.935, 84.4215, 174.128, 88.9465, 176.978, 123.973, 111.114)
