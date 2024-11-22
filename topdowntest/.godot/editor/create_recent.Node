@@ -1,13 +1,14 @@
+AnimationPlayer
+CollisionShape2D
+Camera2D
 Bone2D
 Skeleton2D
+Area2D
 Polygon2D
 Node2D
 AnimatedSprite2D
 TileMapLayer
 TileMap
-CollisionShape2D
 Sprite2D
-Area2D
 Timer
 VisibleOnScreenNotifier2D
-Camera2D

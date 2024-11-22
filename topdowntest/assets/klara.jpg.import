@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnvxpyovwchoq"
-path="res://.godot/imported/full_body.png-5e15b5655d3d8e792da154af46604df3.ctex"
+uid="uid://0vqh8lhtv410"
+path="res://.godot/imported/klara.jpg-947f80908623a35248541de212bfa7dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/full_body.png"
-dest_files=["res://.godot/imported/full_body.png-5e15b5655d3d8e792da154af46604df3.ctex"]
+source_file="res://assets/klara.jpg"
+dest_files=["res://.godot/imported/klara.jpg-947f80908623a35248541de212bfa7dc.ctex"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c1mvl25c17ac0"]
 
-[ext_resource type="PackedScene" uid="uid://bcwwoysvlps72" path="res://scenes/player.tscn" id="1_ifpap"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_ifrof"]
 [ext_resource type="Texture2D" uid="uid://bkyqxk17dcd3j" path="res://assets/icon.svg" id="2_m53gs"]
+[ext_resource type="PackedScene" uid="uid://qge434su81ex" path="res://scenes/klara.tscn" id="4_kptsu"]
 
 [sub_resource type="GDScript" id="GDScript_kndga"]
 script/source = "extends Timer
@@ -22,14 +22,6 @@ func _process(delta: float) -> void:
 position = Vector2(821, -111)
 script = ExtResource("1_ifrof")
 
-[node name="Player" parent="." instance=ExtResource("1_ifpap")]
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-scale = Vector2(0.998527, 1.04021)
-zoom = Vector2(0.5, 0.5)
-position_smoothing_enabled = true
-position_smoothing_speed = 3.0
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -100
 scale = Vector2(37.0251, 27.1226)
@@ -39,5 +31,13 @@ texture = ExtResource("2_m53gs")
 wait_time = 0.5
 autostart = true
 script = SubResource("GDScript_kndga")
+
+[node name="Klara" parent="." instance=ExtResource("4_kptsu")]
+position = Vector2(0, 0)
+scale = Vector2(0.25, 0.25)
+
+[node name="Camera2D" type="Camera2D" parent="Klara"]
+position = Vector2(-48, -8)
+zoom = Vector2(0.5, 0.5)
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
