@@ -3,6 +3,9 @@ extends Area2D
 var dir: Vector2 = Vector2.ZERO
 @export var speed: float
 
+func _ready() -> void:
+	pass
+
 func _process(delta: float) -> void:
 	position += dir * speed * delta
 

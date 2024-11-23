@@ -13,6 +13,7 @@ speed = 1000.0
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
 position = Vector2(0, -15)
+rotation = 1.5708
 scale = Vector2(0.0800005, 0.240001)
 texture = ExtResource("2_82fwg")
 

@@ -32,10 +32,8 @@ func read_input() -> void:
 
 func shoot() -> void:
 	if should_shoot:
-		var mouse = get_global_mouse_position()
-		var direction = (mouse - position).normalized()
 		should_shoot = false
 		var projectile = bullet_scene.instantiate()
 		get_parent().add_child(projectile)
 		projectile.position = position
-		projectile.dir = direction
+		projectile.dir = (get_global_mouse_position()-position).normalized()
