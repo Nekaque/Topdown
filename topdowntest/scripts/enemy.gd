@@ -13,9 +13,10 @@ func _process(delta: float) -> void:
 
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Bullet"):
-		$CPUParticles2D.emitting = true
+		#$CPUParticles2D.emitting = true
+		$GPUParticles2D.emitting = true
 		var tween = get_tree().create_tween()
-		tween.tween_property($Sprite2D, "modulate", Color.RED, 0.3)
+		tween.tween_property($Sprite2D, "modulate", Color.RED, 0.5)
 		tween.tween_property($Sprite2D, "scale", Vector2(), 0.5)
 		tween.tween_callback(queue_free)
 		

@@ -8,7 +8,6 @@ var moving = true
 var bullet_scene = preload("res://scenes/bullet.tscn")
 
 func _physics_process(delta: float) -> void:
-	print(delta)
 	read_input()
 	position += delta * speed * movement_dir
 	if should_shoot:
