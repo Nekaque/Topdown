@@ -12,4 +12,3 @@ TileMapLayer
 TileMap
 Node2D
 CanvasGroup
-Camera2D
