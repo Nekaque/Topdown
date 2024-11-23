@@ -7,22 +7,21 @@
 size = Vector2(8, 27)
 
 [node name="Bullet" type="Area2D" groups=["Bullet"]]
+position = Vector2(0, -2)
 script = ExtResource("1_18rdw")
-speed = 1000.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(0, -15)
 rotation = 1.5708
 scale = Vector2(0.0800005, 0.240001)
 texture = ExtResource("2_82fwg")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(-2.38419e-07, -14)
+rotation = 1.5708
 scale = Vector2(0.4, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -15.5)
+rotation = 1.5708
 shape = SubResource("RectangleShape2D_7t6ec")
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

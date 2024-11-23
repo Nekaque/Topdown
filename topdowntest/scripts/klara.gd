@@ -9,12 +9,15 @@ var bullet_scene = preload("res://scenes/bullet.tscn")
 
 func _process(delta: float) -> void:
 	read_input()
-	move(delta)
-	#look()
-	shoot()
-	
-func move(delta: float) -> void:
 	position += delta * speed * movement_dir
+	if should_shoot:
+		var projectile = bullet_scene.instantiate()
+		var mouse = get_global_mouse_position()
+		projectile.position = position
+		projectile.look_at(mouse)
+		get_parent().add_child(projectile)
+		projectile.dir = (mouse-position).normalized()
+		should_shoot = false
 
 func read_input() -> void:
 	movement_dir = Vector2.ZERO
@@ -29,11 +32,4 @@ func read_input() -> void:
 	if Input.is_action_just_pressed("shoot"):
 		should_shoot = true
 	movement_dir = movement_dir.normalized()
-
-func shoot() -> void:
-	if should_shoot:
-		should_shoot = false
-		var projectile = bullet_scene.instantiate()
-		get_parent().add_child(projectile)
-		projectile.position = position
-		projectile.dir = (get_global_mouse_position()-position).normalized()
+	
