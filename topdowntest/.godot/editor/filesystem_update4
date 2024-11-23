@@ -1,5 +1,7 @@
-res://scenes/klara.tscn
 res://scenes/game.tscn
+res://scripts/klara.gd
+res://scenes/klara.tscn
 res://scenes/bullet.tscn
 res://scenes/enemy.tscn
-res://scripts/klara.gd
+res://scripts/enemy.gd
+res://scripts/animation_player.gd

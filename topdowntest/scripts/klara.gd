@@ -4,10 +4,10 @@ var movement_dir: Vector2 = Vector2.ZERO
 @export var speed: float = 1000
 
 var should_shoot: bool
-
+var moving = true
 var bullet_scene = preload("res://scenes/bullet.tscn")
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	read_input()
 	position += delta * speed * movement_dir
 	if should_shoot:
@@ -18,6 +18,7 @@ func _process(delta: float) -> void:
 		get_parent().add_child(projectile)
 		projectile.dir = (mouse-position).normalized()
 		should_shoot = false
+	move_and_slide()
 
 func read_input() -> void:
 	movement_dir = Vector2.ZERO
@@ -32,4 +33,10 @@ func read_input() -> void:
 	if Input.is_action_just_pressed("shoot"):
 		should_shoot = true
 	movement_dir = movement_dir.normalized()
+	if (movement_dir == Vector2.ZERO and moving):
+		$AnimationPlayer.play("RESET")
+		moving = false
+	elif (!moving and movement_dir != Vector2.ZERO):
+		moving = true
+		$AnimationPlayer.play("WALK")
 	
