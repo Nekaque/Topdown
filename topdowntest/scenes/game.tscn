@@ -201,7 +201,7 @@ scale = Vector2(0.1, 0.1)
 
 [node name="Camera2D" type="Camera2D" parent="Klara"]
 scale = Vector2(0.125, 0.125)
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(1.25, 1.25)
 
 [node name="PointLight2D" type="PointLight2D" parent="Klara"]
 position = Vector2(-0.000305176, -0.000305176)
