@@ -16,7 +16,7 @@ rotation = 1.5708
 scale = Vector2(0.0800005, 0.240001)
 texture = ExtResource("2_82fwg")
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." groups=["Bullet"]]
 rotation = 1.5708
 scale = Vector2(0.4, 1)
 
