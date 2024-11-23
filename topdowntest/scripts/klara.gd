@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 var movement_dir: Vector2 = Vector2.ZERO
 @export var speed: float = 1000

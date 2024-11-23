@@ -46,6 +46,7 @@ texture = ExtResource("4_1x5ms")
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
 2:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_r8vta")
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -59,7 +60,9 @@ texture = ExtResource("4_1x5ms")
 0:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_6mopn")
 1:1/0 = 0
 1:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_u26h2")
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:1/0 = 0
 4:1/0 = 0
 5:1/0 = 0
@@ -189,19 +192,22 @@ tile_map_data = PackedByteArray("AADm//T/AAABAAAAAADm//X/AAABAAAAAADl//b/AAABAAA
 tile_set = SubResource("TileSet_tryql")
 script = ExtResource("4_ogcly")
 
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.118581, 0.118581, 0.118581, 1)
+
 [node name="Klara" parent="." instance=ExtResource("4_kptsu")]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.01, 0.01)
 
 [node name="Camera2D" type="Camera2D" parent="Klara"]
-scale = Vector2(1.25, 1.25)
+scale = Vector2(0.125, 0.125)
 zoom = Vector2(0.8, 0.8)
 
 [node name="PointLight2D" type="PointLight2D" parent="Klara"]
+position = Vector2(-0.000305176, -0.000305176)
+scale = Vector2(0.1, 0.1)
+energy = 1.6
 shadow_enabled = true
 texture = ExtResource("5_556qf")
-texture_scale = 18.11
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.118581, 0.118581, 0.118581, 1)
+texture_scale = 50.0
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

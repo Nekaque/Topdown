@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://scripts/animation_player.gd" id="2_vdxhe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_722dr"]
-size = Vector2(117, 642)
+size = Vector2(414, 1540)
 
 [sub_resource type="Animation" id="Animation_vnhxe"]
 length = 0.001
@@ -261,12 +261,10 @@ _data = {
 "WALK": SubResource("Animation_saj00")
 }
 
-[node name="Klara" type="Area2D"]
-scale = Vector2(0.01, 0.01)
+[node name="Klara" type="CharacterBody2D"]
 script = ExtResource("1_2a0i4")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
-position = Vector2(11, 41)
 
 [node name="Base" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(-3, 234)
@@ -297,7 +295,7 @@ position = Vector2(-21, 94)
 rest = Transform2D(1, 0, 0, 1, -21, 94)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+position = Vector2(32, 266)
 shape = SubResource("RectangleShape2D_722dr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
