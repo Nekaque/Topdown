@@ -262,7 +262,7 @@ _data = {
 }
 
 [node name="Klara" type="Area2D"]
-scale = Vector2(0.001, 0.001)
+scale = Vector2(0.01, 0.01)
 script = ExtResource("1_2a0i4")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
